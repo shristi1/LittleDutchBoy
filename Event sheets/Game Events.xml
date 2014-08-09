@@ -109,6 +109,9 @@
                 <action id="2" name="Set visible" sid="6080287890742105" type="TryAgain">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="2" name="Set visible" sid="1592293323404394" type="Replay">
+                    <param id="0" name="Visibility">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="527623265459624">
@@ -128,6 +131,9 @@
                 </action>
                 <action id="2" name="Set visible" sid="2531285217067827" type="TryAgain">
                     <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="2986533651910772" type="Replay">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
@@ -150,6 +156,19 @@
             </conditions>
             <actions>
                 <action id="-26" name="Restart layout" sid="2846696369748188" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="1680415546978193">
+            <conditions>
+                <condition id="0" name="On clicked" sid="8861633988942629" type="Replay" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7918723785914216" type="System">
+                    <param id="0" name="Layout">StartPage</param>
+                </action>
+                <action id="6" name="Stop" sid="6192840867400991" type="Audio">
+                    <param id="0" name="Tag">&quot;Background Sound&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>
